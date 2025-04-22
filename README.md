@@ -1,4 +1,4 @@
-# ALIF SENSE
+# ALIF SENSE - DEV
 ALiFsense is a web based simulation platform that trains clinicians to safely and effectively collaborate with autonomous AI in diagnostic decision making. It addresses a critical gap: today’s healthcare professionals aren’t taught how to interrogate, override, or govern AI tools—yet these systems are arriving in practice now.
 
 Core Objectives
