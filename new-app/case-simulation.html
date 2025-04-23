@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIF SENSE - Case Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for case simulation */
+        .case-container {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .case-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .case-main {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        
+        .case-sidebar {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        
+        .case-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .case-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-subtitle {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        
+        .case-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-section-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+        }
+        
+        .case-section-content {
+            color: #4b5563;
+        }
+        
+        .case-tabs {
+            display: flex;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-tab {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-weight: 500;
+            color: #6b7280;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .case-tab.active {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+        
+        .case-tab-content {
+            display: none;
+        }
+        
+        .case-tab-content.active {
+            display: block;
+        }
+        
+        .case-actions {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .vital-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .vital-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.375rem;
+        }
+        
+        .vital-label {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 0.25rem;
+        }
+        
+        .vital-value {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .diagnosis-form {
+            margin-top: 1.5rem;
+        }
+        
+        .diagnosis-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            min-height: 100px;
+            margin-bottom: 1rem;
+        }
+        
+        .ai-recommendation {
+            background-color: #eff6ff;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .ai-recommendation-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .ai-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .ai-title {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .ai-content {
+            color: #4b5563;
+        }
+        
+        .confidence-meter {
+            height: 8px;
+            background-color: #e5e7eb;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+        
+        .confidence-level {
+            height: 100%;
+            background-color: #2563eb;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">ALIF SENSE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/" data-page="home">Home</a></li>
+                    <li><a href="/cases" data-page="cases" class="active">Cases</a></li>
+                    <li><a href="/dashboard" data-page="dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="user-section">
+                <div class="user-info">
+                    <span class="user-name" id="user-name"></span>
+                    <button class="btn btn-small btn-outline" id="back-btn">Back to Cases</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <div class="case-container">
+                <div class="case-main">
+                    <div class="case-header">
+                        <h1 class="case-title" id="case-title">Case #1: Chest Pain</h1>
+                        <div class="case-subtitle" id="case-subtitle">45-year-old male presenting with acute chest pain</div>
+                    </div>
+                    
+                    <div class="case-tabs">
+                        <div class="case-tab active" data-tab="patient-info">Patient Info</div>
+                        <div class="case-tab" data-tab="history">History</div>
+                        <div class="case-tab" data-tab="physical-exam">Physical Exam</div>
+                        <div class="case-tab" data-tab="labs">Labs</div>
+                        <div class="case-tab" data-tab="imaging">Imaging</div>
+                        <div class="case-tab" data-tab="diagnosis">Diagnosis</div>
+                    </div>
+                    
+                    <div class="case-tab-content active" id="patient-info-tab">
+                        <div class="case-section">
+                            <h3 class="case-section-title">Demographics</h3>
+                            <div class="case-section-content">
+                                <p><strong>Age:</strong> 45 years</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Ethnicity:</strong> Caucasian</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Chief Complaint</h3>
+                            <div class="case-section-content">
+                                <p>"I've been having this crushing chest pain for the last hour."</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Vitals</h3>
+                            <div class="case-section-content">
+                                <div class="vital-grid">
+                                    <div class="vital-item">
+                                        <div class="vital-label">Temperature</div>
+                                        <div class="vital-value">37.0°C</div>
+                                    </div>
+                                    <div class="vital-item">
+                                        <div class="vital-label">Heart Rate</div>
+                                        <div class="vital-value">110 bpm</div>
+                                    </div>
+                                    <div class="vital-item">
+                                        <div class="vital-label">Blood Pressure</div>
+                                        <div class="vital-value">145/90 mmHg</div>
+                                    </div>
+                                    <div class="vital-item">
+                                        <div class="vital-label">Respiratory Rate</div>
+                                        <div class="vital-value">22 /min</div>
+                                    </div>
+                                    <div class="vital-item">
+                                        <div class="vital-label">Oxygen Saturation</div>
+                                        <div class="vital-value">94%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-tab-content" id="history-tab">
+                        <div class="case-section">
+                            <h3 class="case-section-title">History of Present Illness</h3>
+                            <div class="case-section-content">
+                                <p>Patient is a 45-year-old male who presents to the emergency department with a 1-hour history of severe, crushing chest pain. The pain is located in the center of his chest and radiates to his left arm and jaw. He describes the pain as pressure-like and rates it as 8/10 in severity. The pain started while he was watching TV and has been constant since onset. He reports associated shortness of breath, nausea, and diaphoresis. He denies fever, cough, or recent trauma.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Past Medical History</h3>
+                            <div class="case-section-content">
+                                <ul>
+                                    <li>Hypertension (diagnosed 5 years ago)</li>
+                                    <li>Hyperlipidemia (diagnosed 3 years ago)</li>
+                                    <li>Type 2 Diabetes Mellitus (diagnosed 2 years ago)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Medications</h3>
+                            <div class="case-section-content">
+                                <ul>
+                                    <li>Lisinopril 10mg daily</li>
+                                    <li>Atorvastatin 20mg daily</li>
+                                    <li>Metformin 500mg twice daily</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Social History</h3>
+                            <div class="case-section-content">
+                                <p>Patient is a current smoker with a 20 pack-year history. He drinks alcohol socially (2-3 beers per week) and denies illicit drug use. He works as an accountant and reports a high-stress job. He is married with two children.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Family History</h3>
+                            <div class="case-section-content">
+                                <p>Father had a myocardial infarction at age 50. Mother has hypertension and type 2 diabetes. No family history of sudden cardiac death.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-tab-content" id="physical-exam-tab">
+                        <div class="case-section">
+                            <h3 class="case-section-title">General</h3>
+                            <div class="case-section-content">
+                                <p>Patient appears uncomfortable and diaphoretic. He is alert and oriented to person, place, and time.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Cardiovascular</h3>
+                            <div class="case-section-content">
+                                <p>Regular rate and rhythm. No murmurs, gallops, or rubs. Normal S1 and S2. No jugular venous distention. Peripheral pulses are equal bilaterally.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Respiratory</h3>
+                            <div class="case-section-content">
+                                <p>Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi. Respiratory effort is slightly increased.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Abdominal</h3>
+                            <div class="case-section-content">
+                                <p>Soft, non-tender, and non-distended. Normal bowel sounds. No hepatosplenomegaly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Extremities</h3>
+                            <div class="case-section-content">
+                                <p>No edema, cyanosis, or clubbing. Normal range of motion. No tenderness to palpation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Neurological</h3>
+                            <div class="case-section-content">
+                                <p>Cranial nerves II-XII intact. Motor strength 5/5 in all extremities. Sensation intact to light touch. Deep tendon reflexes 2+ and symmetric.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-tab-content" id="labs-tab">
+                        <div class="case-section">
+                            <h3 class="case-section-title">Complete Blood Count</h3>
+                            <div class="case-section-content">
+                                <p><strong>WBC:</strong> 9.5 x 10^9/L (Normal: 4.5-11.0 x 10^9/L)</p>
+                                <p><strong>Hemoglobin:</strong> 14.2 g/dL (Normal: 13.5-17.5 g/dL)</p>
+                                <p><strong>Hematocrit:</strong> 42% (Normal: 41-50%)</p>
+                                <p><strong>Platelets:</strong> 250 x 10^9/L (Normal: 150-450 x 10^9/L)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Basic Metabolic Panel</h3>
+                            <div class="case-section-content">
+                                <p><strong>Sodium:</strong> 138 mEq/L (Normal: 135-145 mEq/L)</p>
+                                <p><strong>Potassium:</strong> 4.0 mEq/L (Normal: 3.5-5.0 mEq/L)</p>
+                                <p><strong>Chloride:</strong> 102 mEq/L (Normal: 98-107 mEq/L)</p>
+                                <p><strong>Bicarbonate:</strong> 24 mEq/L (Normal: 22-29 mEq/L)</p>
+                                <p><strong>BUN:</strong> 18 mg/dL (Normal: 7-20 mg/dL)</p>
+                                <p><strong>Creatinine:</strong> 1.0 mg/dL (Normal: 0.6-1.2 mg/dL)</p>
+                                <p><strong>Glucose:</strong> 160 mg/dL (Normal: 70-100 mg/dL)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Cardiac Enzymes</h3>
+                            <div class="case-section-content">
+                                <p><strong>Troponin I:</strong> 0.8 ng/mL (Normal: &lt;0.04 ng/mL) <span style="color: #b91c1c; font-weight: 500;">↑</span></p>
+                                <p><strong>CK-MB:</strong> 12 ng/mL (Normal: &lt;5 ng/mL) <span style="color: #b91c1c; font-weight: 500;">↑</span></p>
+                                <p><strong>BNP:</strong> 180 pg/mL (Normal: &lt;100 pg/mL) <span style="color: #b91c1c; font-weight: 500;">↑</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Lipid Panel</h3>
+                            <div class="case-section-content">
+                                <p><strong>Total Cholesterol:</strong> 220 mg/dL (Normal: &lt;200 mg/dL) <span style="color: #b91c1c; font-weight: 500;">↑</span></p>
+                                <p><strong>LDL:</strong> 140 mg/dL (Normal: &lt;100 mg/dL) <span style="color: #b91c1c; font-weight: 500;">↑</span></p>
+                                <p><strong>HDL:</strong> 35 mg/dL (Normal: &gt;40 mg/dL) <span style="color: #b91c1c; font-weight: 500;">↓</span></p>
+                                <p><strong>Triglycerides:</strong> 180 mg/dL (Normal: &lt;150 mg/dL) <span style="color: #b91c1c; font-weight: 500;">↑</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-tab-content" id="imaging-tab">
+                        <div class="case-section">
+                            <h3 class="case-section-title">Electrocardiogram (ECG)</h3>
+                            <div class="case-section-content">
+                                <p>Sinus tachycardia with a rate of 110 bpm. ST-segment elevation of 2mm in leads V2-V5. Reciprocal ST-segment depression in leads II, III, and aVF. No significant Q waves.</p>
+                                <div style="margin-top: 1rem; text-align: center;">
+                                    <img src="https://www.researchgate.net/profile/Rik-Willems/publication/51873122/figure/fig2/AS:214158353997825@1428073999553/Electrocardiogram-showing-ST-segment-elevation-in-the-anterior-leads-V1-V4-with.png" alt="ECG showing ST elevation" style="max-width: 100%; border-radius: 0.375rem;">
+                                    <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">ECG showing ST-segment elevation in anterior leads</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h3 class="case-section-title">Chest X-ray</h3>
+                            <div class="case-section-content">
+                                <p>No cardiomegaly. No pulmonary edema. No infiltrates or effusions. Normal mediastinal contour.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-tab-content" id="diagnosis-tab">
+                        <div class="case-section">
+                            <h3 class="case-section-title">Your Diagnosis</h3>
+                            <div class="case-section-content">
+                                <form class="diagnosis-form" id="diagnosis-form">
+                                    <div class="form-group">
+                                        <label for="diagnosis">Enter your diagnosis:</label>
+                                        <textarea id="diagnosis" placeholder="Based on the patient's presentation and findings, my diagnosis is..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="plan">Treatment plan:</label>
+                                        <textarea id="plan" placeholder="My recommended treatment plan includes..."></textarea>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Submit Diagnosis</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-sidebar">
+                    <div class="ai-recommendation">
+                        <div class="ai-recommendation-header">
+                            <div class="ai-icon">AI</div>
+                            <div class="ai-title">AI Recommendation</div>
+                        </div>
+                        <div class="ai-content">
+                            <p>Based on the patient's presentation and findings, the most likely diagnosis is <strong>Acute Myocardial Infarction (STEMI)</strong>.</p>
+                            <div class="confidence-meter">
+                                <div class="confidence-level"></div>
+                            </div>
+                            <p style="font-size: 0.875rem; color: #6b7280;">Confidence: 90%</p>
+                            <p style="margin-top: 0.75rem;"><strong>Key findings:</strong></p>
+                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                                <li>Crushing chest pain radiating to left arm and jaw</li>
+                                <li>ST-segment elevation on ECG</li>
+                                <li>Elevated cardiac enzymes (Troponin I, CK-MB)</li>
+                                <li>Risk factors: hypertension, hyperlipidemia, diabetes, smoking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="case-section">
+                        <h3 class="case-section-title">Case Notes</h3>
+                        <div class="case-section-content">
+                            <p>This is a classic presentation of an acute myocardial infarction (heart attack). The patient has multiple risk factors and presents with typical symptoms and diagnostic findings.</p>
+                            <p style="margin-top: 0.75rem;">Remember to consider the following in your diagnosis:</p>
+                            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                                <li>Timing of symptom onset</li>
+                                <li>ECG changes</li>
+                                <li>Cardiac enzyme elevations</li>
+                                <li>Risk factor profile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div>&copy; 2023 ALIF SENSE. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get user from localStorage
+            const userJson = localStorage.getItem('alif_current_user');
+            if (userJson) {
+                try {
+                    const user = JSON.parse(userJson);
+                    document.getElementById('user-name').textContent = `${user.firstName} ${user.lastName}`;
+                } catch (error) {
+                    console.error('Error parsing user data:', error);
+                    window.location.href = '/';
+                }
+            } else {
+                window.location.href = '/';
+            }
+            
+            // Tab switching
+            const tabs = document.querySelectorAll('.case-tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Hide all tab content
+                    document.querySelectorAll('.case-tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show corresponding tab content
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-tab`).classList.add('active');
+                });
+            });
+            
+            // Back button
+            document.getElementById('back-btn').addEventListener('click', () => {
+                window.location.href = '/';
+            });
+            
+            // Diagnosis form
+            document.getElementById('diagnosis-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const diagnosis = document.getElementById('diagnosis').value.trim();
+                const plan = document.getElementById('plan').value.trim();
+                
+                if (!diagnosis || !plan) {
+                    alert('Please enter both a diagnosis and treatment plan.');
+                    return;
+                }
+                
+                // In a real application, we would send this data to the server
+                // For now, we'll just show a success message
+                alert('Diagnosis submitted successfully! The correct diagnosis is Acute Myocardial Infarction (STEMI).');
+                
+                // Redirect back to cases page
+                window.location.href = '/';
+            });
+        });
+    </script>
+</body>
+</html>

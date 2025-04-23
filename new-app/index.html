@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIF SENSE - New Implementation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">ALIF SENSE</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="cases">Cases</a></li>
+                    <li><a href="#" data-page="dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="user-section">
+                <div class="user-info hidden">
+                    <span class="user-name"></span>
+                    <button class="btn btn-small btn-outline" id="logout-btn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <!-- Login Page -->
+            <section class="page" id="login-page">
+                <div class="card">
+                    <h2 class="card-title">Login to ALIF SENSE</h2>
+                    <div class="card-content">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                            <div class="message error hidden" id="login-error"></div>
+                        </form>
+                        <div class="demo-accounts">
+                            <h3>Demo Accounts</h3>
+                            <ul>
+                                <li><strong>Admin:</strong> admin@alifsense.com / admin123</li>
+                                <li><strong>Instructor:</strong> instructor@alifsense.com / instructor123</li>
+                                <li><strong>Student:</strong> student@alifsense.com / student123</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home Page -->
+            <section class="page hidden" id="home-page">
+                <div class="hero">
+                    <h1>Welcome to ALIF SENSE</h1>
+                    <p>Trust your AI. Train your sense.</p>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>AI-Assisted Learning</h3>
+                        <p>Learn from AI-generated cases and improve your diagnostic skills.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Real-world Scenarios</h3>
+                        <p>Practice with realistic medical cases based on real-world scenarios.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Performance Tracking</h3>
+                        <p>Track your progress and identify areas for improvement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cases Page -->
+            <section class="page hidden" id="cases-page">
+                <h2>Medical Cases</h2>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>Case #1: Chest Pain</h3>
+                            <span class="case-difficulty medium">Medium</span>
+                        </div>
+                        <div class="case-content">
+                            <p>45-year-old male presenting with acute chest pain radiating to the left arm.</p>
+                        </div>
+                        <div class="case-footer">
+                            <button class="btn btn-primary">Start Case</button>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>Case #2: Shortness of Breath</h3>
+                            <span class="case-difficulty easy">Easy</span>
+                        </div>
+                        <div class="case-content">
+                            <p>32-year-old female with progressive shortness of breath over the past week.</p>
+                        </div>
+                        <div class="case-footer">
+                            <button class="btn btn-primary">Start Case</button>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>Case #3: Abdominal Pain</h3>
+                            <span class="case-difficulty hard">Hard</span>
+                        </div>
+                        <div class="case-content">
+                            <p>58-year-old female with severe right upper quadrant abdominal pain.</p>
+                        </div>
+                        <div class="case-footer">
+                            <button class="btn btn-primary">Start Case</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Page -->
+            <section class="page hidden" id="dashboard-page">
+                <h2>Your Dashboard</h2>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3>Completed Cases</h3>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Average Score</h3>
+                        <div class="stat-value">85%</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Accuracy Rate</h3>
+                        <div class="stat-value">78%</div>
+                    </div>
+                </div>
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-time">2 hours ago</div>
+                            <div class="activity-content">Completed Case #3: Abdominal Pain</div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-time">Yesterday</div>
+                            <div class="activity-content">Completed Case #1: Chest Pain</div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-time">3 days ago</div>
+                            <div class="activity-content">Completed Case #2: Shortness of Breath</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div>&copy; 2023 ALIF SENSE. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
