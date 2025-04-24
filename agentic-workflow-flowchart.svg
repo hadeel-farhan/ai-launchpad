@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1000 1100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <path d="M170,55L170,85C170,87.76 167.76,90 165,90L55,90C52.24,90 50,87.76 50,85L50,55C50,52.24 52.24,50 55,50L165,50C167.76,50 170,52.24 170,55Z" style="fill:rgb(212,241,249);stroke:rgb(5,114,143);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,110,75)">
+        <text x="-50.572px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">User/Clinician</text>
+    </g>
+    <path d="M170,155L170,185C170,187.76 167.76,190 165,190L55,190C52.24,190 50,187.76 50,185L50,155C50,152.24 52.24,150 55,150L165,150C167.76,150 170,152.24 170,155Z" style="fill:rgb(212,241,249);stroke:rgb(5,114,143);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,110,175)">
+        <text x="-50.572px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Case Selection</text>
+    </g>
+    <g transform="matrix(1.26275,0,0,1,-30.6324,0)">
+        <path d="M170,905L170,935C170,937.76 168.226,940 166.04,940L53.96,940C51.774,940 50,937.76 50,935L50,905C50,902.24 51.774,900 53.96,900L166.04,900C168.226,900 170,902.24 170,905Z" style="fill:rgb(212,241,249);stroke:rgb(5,114,143);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,110,925)">
+        <text x="-68.634px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Review and Feedback</text>
+    </g>
+    <g transform="matrix(1.28656,0,0,1,-86.4717,0)">
+        <path d="M370,155L370,185C370,187.76 368.259,190 366.114,190L253.886,190C251.741,190 250,187.76 250,185L250,155C250,152.24 251.741,150 253.886,150L366.114,150C368.259,150 370,152.24 370,155Z" style="fill:rgb(218,232,252);stroke:rgb(108,142,191);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,310,175)">
+        <text x="-68.634px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Case Initialization</text>
+    </g>
+    <path d="M370,235L370,265C370,267.76 367.76,270 365,270L255,270C252.24,270 250,267.76 250,265L250,235C250,232.24 252.24,230 255,230L365,230C367.76,230 370,232.24 370,235Z" style="fill:rgb(218,232,252);stroke:rgb(108,142,191);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,310,255)">
+        <text x="-43.348px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Patient Data</text>
+    </g>
+    <g transform="matrix(1.2273,0,0,1,-102.284,0)">
+        <path d="M570,235L570,265C570,267.76 568.175,270 565.926,270L454.074,270C451.825,270 450,267.76 450,265L450,235C450,232.24 451.825,230 454.074,230L565.926,230C568.175,230 570,232.24 570,235Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,522,255)">
+        <text x="-57.797px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Agent Activation</text>
+    </g>
+    <g transform="matrix(1.12361,0,0,1,-45.7344,0)">
+        <path d="M370,335L370,365C370,367.76 368.006,370 365.55,370L254.45,370C251.994,370 250,367.76 250,365L250,335C250,332.24 251.994,330 254.45,330L365.55,330C368.006,330 370,332.24 370,335Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,306,355)">
+        <text x="-57.797px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Diagnostic Agent</text>
+    </g>
+    <g transform="matrix(1.03032,0,0,1,-12.1264,0)">
+        <path d="M520,335L520,365C520,367.76 517.825,370 515.147,370L404.853,370C402.175,370 400,367.76 400,365L400,335C400,332.24 402.175,330 404.853,330L515.147,330C517.825,330 520,332.24 520,335Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,460,355)">
+        <text x="-54.185px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Treatment Agent</text>
+    </g>
+    <g transform="matrix(1.11996,0,0,1,-65.9792,0)">
+        <path d="M670,335L670,365C670,367.76 668,370 665.536,370L554.464,370C552,370 550,367.76 550,365L550,335C550,332.24 552,330 554.464,330L665.536,330C668,330 670,332.24 670,335Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,616,355)">
+        <text x="-65.021px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Specialist Agent 1</text>
+    </g>
+    <g transform="matrix(1.27131,0,0,1,-189.918,0)">
+        <path d="M820,335L820,365C820,367.76 818.238,370 816.067,370L703.933,370C701.762,370 700,367.76 700,365L700,335C700,332.24 701.762,330 703.933,330L816.067,330C818.238,330 820,332.24 820,335Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,771,355)">
+        <text x="-65.021px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Specialist Agent 2</text>
+    </g>
+    <g transform="matrix(1.23873,0,0,1,-80.6681,0)">
+        <path d="M370,415L370,445C370,447.76 368.191,450 365.964,450L254.036,450C251.809,450 250,447.76 250,445L250,415C250,412.24 251.809,410 254.036,410L365.964,410C368.191,410 370,412.24 370,415Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,306,435)">
+        <text x="-68.634px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Diagnostic Analysis</text>
+    </g>
+    <g transform="matrix(1.22858,0,0,1,-103.966,0)">
+        <path d="M520,415L520,445C520,447.76 518.176,450 515.93,450L404.07,450C401.824,450 400,447.76 400,445L400,415C400,412.24 401.824,410 404.07,410L515.93,410C518.176,410 520,412.24 520,415Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,460,435)">
+        <text x="-65.021px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Treatment Planning</text>
+    </g>
+    <path d="M670,415L670,445C670,447.76 667.76,450 665,450L555,450C552.24,450 550,447.76 550,445L550,415C550,412.24 552.24,410 555,410L665,410C667.76,410 670,412.24 670,415Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,610,430)">
+        <text x="-43.348px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Specialist 1</text>
+        <text x="-28.898px" y="12px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Analysis</text>
+    </g>
+    <path d="M820,415L820,445C820,447.76 817.76,450 815,450L705,450C702.24,450 700,447.76 700,445L700,415C700,412.24 702.24,410 705,410L815,410C817.76,410 820,412.24 820,415Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,760,430)">
+        <text x="-43.348px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Specialist 2</text>
+        <text x="-28.898px" y="12px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Analysis</text>
+    </g>
+    <g transform="matrix(1.62198,0,0,1,-314.435,0)">
+        <path d="M570,505L570,535C570,537.76 568.619,540 566.917,540L453.083,540C451.381,540 450,537.76 450,535L450,505C450,502.24 451.381,500 453.083,500L566.917,500C568.619,500 570,502.24 570,505Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,510,525)">
+        <text x="-83.083px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Collaborative Reasoning</text>
+    </g>
+    <path d="M570,575L570,605C570,607.76 567.76,610 565,610L455,610C452.24,610 450,607.76 450,605L450,575C450,572.24 452.24,570 455,570L565,570C567.76,570 570,572.24 570,575Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,510,595)">
+        <text x="-50.572px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Uncertainty ID</text>
+    </g>
+    <g transform="matrix(1.17495,0,0,1,-78.0065,0)">
+        <path d="M470,645L470,675C470,677.76 468.093,680 465.744,680L354.256,680C351.907,680 350,677.76 350,675L350,645C350,642.24 351.907,640 354.256,640L465.744,640C468.093,640 470,642.24 470,645Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,410,665)">
+        <text x="-54.185px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Low Uncertainty</text>
+    </g>
+    <g transform="matrix(1.29923,0,0,1,-173.273,0)">
+        <path d="M670,645L670,675C670,677.76 668.276,680 666.152,680L553.848,680C551.724,680 550,677.76 550,675L550,645C550,642.24 551.724,640 553.848,640L666.152,640C668.276,640 670,642.24 670,645Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,610,665)">
+        <text x="-57.797px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">High Uncertainty</text>
+    </g>
+    <g transform="matrix(1.32719,0,0,1,-192.005,0)">
+        <path d="M670,715L670,745C670,747.76 668.312,750 666.233,750L553.767,750C551.688,750 550,747.76 550,745L550,715C550,712.24 551.688,710 553.767,710L666.233,710C668.312,710 670,712.24 670,715Z" style="fill:rgb(255,230,204);stroke:rgb(215,155,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,615,735)">
+        <text x="-72.246px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Additional Reasoning</text>
+    </g>
+    <g transform="matrix(1.17495,0,0,1,-78.0065,0)">
+        <path d="M470,715L470,745C470,747.76 468.093,750 465.744,750L354.256,750C351.907,750 350,747.76 350,745L350,715C350,712.24 351.907,710 354.256,710L465.744,710C468.093,710 470,712.24 470,715Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,406,735)">
+        <text x="-65.021px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Consensus Building</text>
+    </g>
+    <g transform="matrix(1.29106,0,0,1,-85.5009,0)">
+        <path d="M370,785L370,815C370,817.76 368.265,820 366.127,820L253.873,820C251.735,820 250,817.76 250,815L250,785C250,782.24 251.735,780 253.873,780L366.127,780C368.265,780 370,782.24 370,785Z" style="fill:rgb(213,232,212);stroke:rgb(130,179,102);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,310,805)">
+        <text x="-68.634px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Consensus Agreement</text>
+    </g>
+    <g transform="matrix(1.45851,0,0,1,-224.912,0)">
+        <path d="M570,785L570,815C570,817.76 568.464,820 566.572,820L453.428,820C451.536,820 450,817.76 450,815L450,785C450,782.24 451.536,780 453.428,780L566.572,780C568.464,780 570,782.24 570,785Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,510,805)">
+        <text x="-79.471px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Consensus Disagreement</text>
+    </g>
+    <g transform="matrix(1.45851,0,0,1,-224.912,0)">
+        <path d="M570,855L570,885C570,887.76 568.464,890 566.572,890L453.428,890C451.536,890 450,887.76 450,885L450,855C450,852.24 451.536,850 453.428,850L566.572,850C568.464,850 570,852.24 570,855Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,510,875)">
+        <text x="-61.409px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Evidence Weighing</text>
+    </g>
+    <g transform="matrix(1.26869,0,0,1,-89.4169,0)">
+        <path d="M370,905L370,935C370,937.76 368.234,940 366.059,940L253.941,940C251.766,940 250,937.76 250,935L250,905C250,902.24 251.766,900 253.941,900L366.059,900C368.234,900 370,902.24 370,905Z" style="fill:rgb(213,232,212);stroke:rgb(130,179,102);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,310,925)">
+        <text x="-72.246px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Final Recommendation</text>
+    </g>
+    <g transform="matrix(1.15444,0,0,1,-69.4995,0)">
+        <path d="M570,905L570,935C570,937.76 568.059,940 565.669,940L454.331,940C451.941,940 450,937.76 450,935L450,905C450,902.24 451.941,900 454.331,900L565.669,900C568.059,900 570,902.24 570,905Z" style="fill:rgb(225,213,231);stroke:rgb(150,115,166);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,510,925)">
+        <text x="-54.185px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Risk Management</text>
+    </g>
+    <g transform="matrix(1.18711,0,0,1,-94.7015,0)">
+        <path d="M570,975L570,1005C570,1007.76 568.113,1010 565.788,1010L454.212,1010C451.887,1010 450,1007.76 450,1005L450,975C450,972.24 451.887,970 454.212,970L565.788,970C568.113,970 570,972.24 570,975Z" style="fill:rgb(213,232,212);stroke:rgb(130,179,102);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,510,995)">
+        <g transform="matrix(12,0,0,12,-39.7354,0)">
+        </g>
+        <g transform="matrix(12,0,0,12,-36.123,0)">
+        </g>
+        <text x="-61.409px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Conﬁdence Scoring</text>
+    </g>
+    <path d="M720,975L720,1005C720,1007.76 717.76,1010 715,1010L605,1010C602.24,1010 600,1007.76 600,1005L600,975C600,972.24 602.24,970 605,970L715,970C717.76,970 720,972.24 720,975Z" style="fill:rgb(213,232,212);stroke:rgb(130,179,102);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,660,995)">
+        <text x="-50.572px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Bias Detection</text>
+    </g>
+    <g transform="matrix(1.30397,0,0,1,-88.7281,0)">
+        <path d="M370,975L370,1005C370,1007.76 368.282,1010 366.166,1010L253.834,1010C251.718,1010 250,1007.76 250,1005L250,975C250,972.24 251.718,970 253.834,970L366.166,970C368.282,970 370,972.24 370,975Z" style="fill:rgb(218,232,252);stroke:rgb(108,142,191);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,310,995)">
+        <text x="-72.246px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Learning Integration</text>
+    </g>
+    <g transform="matrix(1.56951,0,0,1,-177.457,0)">
+        <path d="M370,1045L370,1075C370,1077.76 368.573,1080 366.814,1080L253.186,1080C251.427,1080 250,1077.76 250,1075L250,1045C250,1042.24 251.427,1040 253.186,1040L366.814,1040C368.573,1040 370,1042.24 370,1045Z" style="fill:rgb(218,232,252);stroke:rgb(108,142,191);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,310,1065)">
+        <text x="-54.185px" y="0px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:12px;">Knowledge Graph</text>
+    </g>
+    <path d="M110,90L110,150" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <g transform="matrix(1,0,0,1,125,120)">
+        <text x="0px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Selects Case</text>
+    </g>
+    <path d="M170,170L250,170" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M310,190L310,230" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M370,250L450,250" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,270L510,310L310,310L310,330" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,270L510,310L460,310L460,330" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,270L510,310L610,310L610,330" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,270L510,310L760,310L760,330" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M310,370L310,410" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M460,370L460,410" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M610,370L610,410" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M760,370L760,410" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M310,450L310,480L450,480L450,500" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M460,450L460,480L510,480L510,500" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M610,450L610,480L550,480L550,500" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M760,450L760,480L570,480L570,500" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,540L510,570" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M450,590L410,590L410,640" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M570,590L610,590L610,640" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M410,680L410,710" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M610,680L610,710" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M610,750L610,780L570,780" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <g transform="matrix(1,0,0,1,620,765)">
+        <text x="0px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">New Evidence</text>
+    </g>
+    <path d="M410,750L410,780L370,780" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M410,750L410,780L450,780" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,820L510,850" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <g transform="matrix(0.976356,0,0,0.636364,12.0587,323.636)">
+        <path d="M510,890L510,860L310,860L310,780" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    </g>
+    <path d="M250,805L200,805L200,900L250,900" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M310,940L310,970" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M310,1010L310,1040" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M370,900L450,900" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,940L510,970" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,940L600,940L600,970" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M370,920L380,920L380,1000L200,1000L200,920L170,920" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M510,1010L510,1020L180,1020L180,930L170,930" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <path d="M600,1010L600,1030L160,1030L160,940L170,940" style="fill:none;fill-rule:nonzero;stroke:rgb(102,102,102);stroke-width:1.5px;"/>
+    <g transform="matrix(1,0,0,1,344.748,220.672)">
+        <text x="-33.113px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Initializes</text>
+    </g>
+    <g transform="matrix(1,0,0,1,410,247)">
+        <text x="-36.123px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Patient Data</text>
+    </g>
+    <g transform="matrix(1,0,0,1,450,300)">
+        <text x="-33.113px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Initializes</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,390)">
+        <text x="-24.082px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Analyzes</text>
+    </g>
+    <g transform="matrix(1,0,0,1,500,390)">
+        <text x="-27.092px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Evaluates</text>
+    </g>
+    <g transform="matrix(1,0,0,1,650,390)">
+        <text x="-24.082px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Insights</text>
+    </g>
+    <g transform="matrix(1,0,0,1,800,390)">
+        <text x="-24.082px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Insights</text>
+    </g>
+    <g transform="matrix(1,0,0,1,429,476)">
+        <text x="-27.092px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Inputs to</text>
+    </g>
+    <g transform="matrix(1,0,0,1,541.307,557.598)">
+        <g transform="matrix(10,0,0,10,9.03076,0)">
+        </g>
+        <g transform="matrix(10,0,0,10,12.041,0)">
+        </g>
+        <text x="-27.092px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Identiﬁes</text>
+    </g>
+    <g transform="matrix(1,0,0,1,430,615)">
+        <text x="-9.031px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Low</text>
+    </g>
+    <g transform="matrix(1,0,0,1,630,615)">
+        <text x="-12.041px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">High</text>
+    </g>
+    <g transform="matrix(1,0,0,1,640,695)">
+        <text x="-24.082px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Requests</text>
+    </g>
+    <g transform="matrix(1,0,0,1,405,695)">
+        <text x="-18.062px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Builds</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,770)">
+        <text x="-27.092px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Agreement</text>
+    </g>
+    <g transform="matrix(1,0,0,1,470,770)">
+        <text x="-36.123px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Disagreement</text>
+    </g>
+    <g transform="matrix(1,0,0,1,530,835)">
+        <text x="-18.062px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Weighs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,237.36,837.264)">
+        <text x="-30.103px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Resolution</text>
+    </g>
+    <g transform="matrix(1,0,0,1,410,900)">
+        <text x="-24.082px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Assesses</text>
+    </g>
+    <g transform="matrix(1,0,0,1,530,955)">
+        <g transform="matrix(10,0,0,10,-9.03076,0)">
+        </g>
+        <g transform="matrix(10,0,0,10,-6.02051,0)">
+        </g>
+        <text x="-27.092px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Conﬁdence</text>
+    </g>
+    <g transform="matrix(1,0,0,1,660,955)">
+        <text x="-12.041px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Bias</text>
+    </g>
+    <g transform="matrix(1,0,0,1,330,955)">
+        <text x="-21.072px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Updates</text>
+    </g>
+    <g transform="matrix(1,0,0,1,190,1000)">
+        <text x="-45.154px" y="0px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:10px;fill:rgb(64,64,64);">Human Oversight</text>
+    </g>
+</svg>
